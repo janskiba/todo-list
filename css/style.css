@@ -1,0 +1,251 @@
+html {
+  height: max-content;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #22201f;
+  font-family: "Roboto", sans-serif;
+  color: rgb(221, 224, 226);
+}
+
+.container {
+  width: 500px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+header {
+  width: 500px;
+  height: 218px;
+  background-image: url("../imgs/lol.jpg");
+  background-size: 100%;
+  position: sticky;
+  top: 0;
+}
+
+.reload {
+  position: absolute;
+  right: 12.5px;
+  top: 12.5px;
+  font-size: 23px;
+}
+
+.reload:active {
+  transform: scale(1.2, 1.2);
+  transition-duration: 1ms;
+  color: rgb(103, 172, 103);
+}
+
+.date {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: rgb(207, 210, 212);
+}
+
+.lol {
+  position: fixed;
+  width: 501px;
+  border-bottom: 1px solid rgba(189, 182, 182, 0.1);
+  border-bottom: none;
+}
+
+.today {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgb(34, 32, 31);
+  height: 50px;
+  min-height: 40px;
+  border: 1px solid rgba(189, 182, 182, 0.1);
+  padding: 0;
+  margin-left: 0;
+}
+
+.today p {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0;
+  padding-left: 10px;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  color: rgb(207, 210, 212);
+}
+
+.today i {
+  display: inline-block;
+  position: absolute;
+  right: 16px;
+  font-size: 23px;
+}
+
+.today i:active {
+  transform: scale(1.2, 1.2);
+  transition-duration: 1ms;
+  color: rgb(103, 172, 103);
+}
+
+.textInput {
+  width: 500px;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  background: rgb(34, 32, 31);
+  border-right: 1px solid rgba(189, 182, 182, 0.1);
+}
+
+.textInput input {
+  z-index: 1000;
+  width: 100%;
+  height: 46px;
+  background: rgb(49, 45, 43);
+  color: rgb(207, 210, 212);
+  border: none;
+  font-size: 19px;
+  text-align: left;
+  padding-left: 10px;
+  letter-spacing: 0.5px;
+  border: 2px solid #579ec7b0;
+}
+
+::placeholder {
+  color: rgb(207, 210, 212);
+}
+
+.text i {
+  position: absolute;
+  right: 10px;
+  font-size: 23px;
+}
+
+.text i:active {
+  cursor: pointer;
+  color: rgb(103, 172, 103);
+  font-size: 28px;
+  right: 7.5px;
+}
+
+.content {
+  position: fixed;
+  width: 499px;
+  background: rgb(34, 32, 31);
+  border: 1px solid rgba(189, 182, 182, 0.1);
+  top: 268px;
+  bottom: 0;
+  overflow: auto;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+#list {
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #22201f;
+  width: 100%;
+  height: 50px;
+  min-height: 40px;
+  border-bottom: 1px solid rgba(189, 182, 182, 0.1);
+  list-style: none;
+  padding: 0;
+  margin-left: 0;
+}
+
+.item p {
+  position: relative;
+  display: inline-block;
+  padding-right: 45px;
+  padding-bottom: 0;
+  margin-left: 50px;
+  font-size: 19px;
+  letter-spacing: 0.5px;
+  color: rgb(207, 210, 212);
+}
+
+.fa-check-circle {
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  color: rgb(103, 172, 103);
+  font-size: 23px;
+}
+.fa-circle {
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  font-size: 23px;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+  color: honeydew;
+}
+
+.fa-edit {
+  position: absolute;
+  padding: 3px;
+  display: inline-block;
+  right: 50px;
+  font-size: 23px;
+}
+.fa-plus-circle:hover,
+.fa-trash-alt:hover,
+.fa-check-circle:hover,
+.fa-circle:hover,
+.fa-edit:hover,
+.fa-sync-alt {
+  cursor: pointer;
+}
+
+.fa-sync-alt {
+  cursor: pointer;
+}
+.fa-edit:active {
+  transform: scale(1.2, 1.2);
+  transition-duration: 1ms;
+  color: rgb(103, 172, 103);
+}
+
+.fa-trash-alt {
+  position: absolute;
+  padding: 3px;
+  display: inline-block;
+  right: 17px;
+  font-size: 23px;
+}
+
+.fa-trash-alt:active {
+  transform: scale(1.2, 1.2);
+  transition-duration: 1ms;
+  color: rgb(165, 80, 80);
+}
+
+.edit_input {
+  position: absolute;
+  left: 50px;
+}
+
+@media (max-width: 500px) {
+  .container,
+  header,
+  .lol {
+    width: 100%;
+  }
+
+  .content,
+  .textInput {
+    width: 99.5%;
+  }
+}

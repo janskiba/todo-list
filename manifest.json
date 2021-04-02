@@ -1,0 +1,52 @@
+{
+    "name": "toDoList",
+    "short_name": "toDoList",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#450d4e",
+    "theme_color": "#450d4e",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/imgs/icons/72px.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "/imgs/icons/96px.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/imgs/icons/128px.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "/imgs/icons/144px.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/imgs/icons/152px.png",
+            "type": "image/png",
+            "sizes": "152x152"
+        },
+        {
+            "src": "/imgs/icons/192px.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/imgs/icons/348px.png",
+            "type": "image/png",
+            "sizes": "348x348"
+        },
+        {
+            "src": "/imgs/icons/512px.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
+
